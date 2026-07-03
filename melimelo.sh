@@ -5,5 +5,7 @@ grep -v '^$' | \
 tac | \
 rev | \
 awk 'BEGIN {n=20} {print n, $0; n++}' | \
-sort 
+sort | \
+wc -l 
+
 
